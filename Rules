@@ -1,0 +1,54 @@
+#!/usr/bin/env ruby
+
+# Compile and route the sitemap
+compile 'sitemap' do
+  filter :erb
+end
+
+route 'sitemap' do
+  item.identifier.chop + '.xml'
+end
+
+# Don't compile the CSS file and route them
+compile '/public/css/*' do
+  # don’t filter or layout
+end
+
+route '/public/css/*' do
+  item.identifier.chop + '.css'
+end
+
+# Don't compile the hosted files and route them
+compile '/public/files/*' do
+  # don’t filter or layout
+end
+
+route '/public/files/*' do
+  item.identifier.chop + "." + item[:extension]
+end
+
+# Compile the projects pages
+compile '/projects/*' do
+  filter :erb
+  layout 'projects'
+end
+
+# Compile the publications pages
+compile '/publications/*' do
+  filter :erb
+  layout 'publications'
+end
+
+# Compile the rest of the pages
+compile '*' do
+  filter :erb
+  layout 'default'
+end
+
+# Route all pages
+route '*' do
+  item.identifier + 'index.html'
+end
+
+# Default
+layout '*', :erb

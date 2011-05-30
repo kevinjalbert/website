@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+  <%= render 'head' %>
+  <body> 
+    <%= render 'header' %>
+    <%= render 'sidebar' %>
+    
+    <div id="general_content">
+      <%= yield %>
+    </div>
+    
+    <%= render 'footer' %>
+  </body>
+</html>

@@ -1,0 +1,20 @@
+    <div id="header">
+      <h1>Kevin Jalbert</h1>
+      <h2>Software Engineer &amp; M.Sc. Student</h2>
+      <h3>
+        <span id="breadcrumbs">
+          /
+          <% breadcrumbs_trail.each do |b| %>
+            <% if b[:title] == item[:title] %>
+              <span id="current_breadcrumb">
+                <u><%= link_to(  b[:title] , b.reps[0].path ) if b %></u>
+              </span>
+	            <%= b != @item ? '/' : '' %>
+   	        <% else %>
+   	          <%= link_to(  b[:title] , b.reps[0].path ) if b %> 
+	            <%= b != @item ? '/' : '' %> 
+	          <% end %>
+	        <%end%>
+        </span>
+      </h3>
+    </div>

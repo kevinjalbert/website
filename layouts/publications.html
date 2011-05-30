@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+  <%= render 'head' %>
+  <body> 
+    <%= render 'header' %>
+    <%= render 'sidebar' %>
+    
+    <div id="project_publication_content">
+      <%= yield %>
+      <br />
+      <% if @item.parent[:title] == 'Home' %>
+        <h1>Publications</h1>
+        <%= create_sorted_publications(@item, 'paper') %>
+        <br />
+        <h1>Posters & Exhibits</h1>
+        <%= create_sorted_publications(@item, 'poster') %>
+      <% end %>
+    </div>
+
+    <%= render 'footer' %>
+  </body>
+</html>

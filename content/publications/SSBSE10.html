@@ -1,0 +1,48 @@
+--- 
+title: SSBSE10
+type: paper
+longtitle: Automatic Repair of Concurrency Bugs
+authors: Jeremy S. Bradbury, Kevin Jalbert
+links: http://faculty.uoit.ca/bradbury/, http://kevin.jalbert.com
+year: 2010
+month: Sept.
+pages: pages 2
+booktitle: Proc. of the 2nd International Symposium on Search Based Software Engineering (SSBSE 2010) - Fast Abstracts
+location: Benevento, Italy
+---
+
+<h1>Automatic Repair of Concurrency Bugs</h1>
+
+<h2>Contact Information</h2>
+<h4>Authors: <%= combine_name_link(item[:authors], item[:links]) %></h4>
+
+<br />
+
+<h2>Related Projects</h2>
+<h4><%= link_to("ARC", "/projects/arc/") %></h4>
+
+<h3>Abstract</h3>
+<p>
+  Bugs in concurrent software are difficult to identify and fix since they may only exhibit abnormal behaviour on certain thread interleavings. We propose the use of genetic programming to incrementally create a solution that fixes a concurrency bug automatically. Bugs in a concurrent program are fixed by iteratively mutating the program and evaluating each mutation using a fitness function that compares the new version of the program with a previous version. We propose three types of mutation operators that can fix concurrency bugs: synchronize an unprotected shared resource, expand synchronization regions to include unprotected source code, and interchanging nested lock objects.
+</p>
+
+<h3>Bibliographic Information [Bibtex format]</h3>
+<blockquote>
+  <i>
+    @inproceedings{BJ10, <br/>
+      &nbsp Author = {Jeremy S. Bradbury and Kevin Jalbert}, <br/>
+      &nbsp Booktitle = {Proc. of the 2nd International Symposium on Search Based Software Engineering (SSBSE 2010) - Fast Abstacts}, <br/>
+      &nbsp Month = {Sept.}, <br/>
+      &nbsp Title = {Automatic Repair of Concurrency Bugs}, <br/>
+      &nbsp Year = {2010} <br/>
+    }
+  </i>
+</blockquote>
+
+<h3>Download</h3>
+<ul>
+  <li><a href="/public/files/publications/SSBSE10.pdf">Paper [PDF]</a></li>
+  <li><a href="/public/files/publications/SSBSE10-slides.pdf">Slides [PDF]</a></li>
+  <li><a href="http://www.youtube.com/watch?v=UtZhFg_iNi4">Presentation [Part 1]</a></li>
+  <li><a href="http://www.youtube.com/watch?v=MoLHmugNSMI">Presentation [Part 2]</a></li>
+</ul>

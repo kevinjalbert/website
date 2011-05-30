@@ -1,0 +1,23 @@
+--- 
+title: Eclipticon
+members: Kevin Jalbert, Cody-James LeBlanc, Chris Forbes, Jeremy S. Bradbury
+links: http://kevin.jalbert.com, http://, http://chrisjf.blogspot.com/, http://faculty.uoit.ca/bradbury/
+url: TBA
+description: A concurrency testing eclipse plugin that allows for targeting areas of concerns.
+---
+
+<h1>Eclipticon</h1>
+
+<h2>Contact</h2>
+<h4>Members: <%= combine_name_link(item[:members], item[:links]) %></h4>
+
+<h3>Description</h3>
+<p>
+Eclipticon is a testing and development software tool to help users optimize for concurrency. This tool will be in the form of an Eclipse plugin and will be targeted to a specific group of users that is developers and testers of concurrent software. The goal of the tool is to ease difficulties that arise when using concurrency in the Java programming language.
+</p>
+<p>The tool is called Eclipticon as it will combine concurrency utilities into the Eclipse IDE. Eclipticon will be an open‐source project that is modeled after the IBMs's closed‐source research testing tool, <a href="https://www.research.ibm.com/haifa/projects/verification/contest/index.html">ConTest</a>. There are some main features that separate these two projects from one another.
+</p>
+<p>First off, Eclipticon will be open‐source as well as including a full‐featured interface with Eclipse. IBM's tool is closed‐source and does not provide a sufficient GUI component. ConTest has the ability to plugin to Eclipse, though it is hardly worth mentioning.
+</p>
+<p>The main differentiating feature is Eclipticon will allow the user to specifically select areas of the code to test. The user can specify these instrumentation points either manually or automatically. The automatic generation of these test areas will be random, though following some user‐adjustable configurations. The testing will occur by inserting thread delays that will cause the newly instrumented code to explore a larger set of thread interleavings.
+</p>
