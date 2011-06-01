@@ -1,23 +1,25 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml"> 
+<html xmlns="http://www.w3.org/1999/xhtml">
   <%= render 'head' %>
-  <body> 
-    <%= render 'header' %>
-    <%= render 'sidebar' %>
-    
-    <div id="project_publication_content">
-      <% if @item.parent[:title] == 'Home' %>
-        <% @item.children.each do | child | %>
-          <% if child[:title] != 'Home' %>
-            <h1><%= child[:title] %></h1>
-            <h2><%= child[:description] %> <br /> <%= link_to(  "Details...", child.reps[0].path ) %> </h2>
+  <body>
+    <div id="shifter">
+      <%= render 'header' %>
+      <%= render 'sidebar' %>
+
+      <div id="project_publication_content">
+        <% if @item.parent[:title] == 'Home' %>
+          <% @item.children.each do | child | %>
+            <% if child[:title] != 'Home' %>
+              <h1><%= child[:title] %></h1>
+              <h2><%= child[:description] %> <br /> <%= link_to(  "Details...", child.reps[0].path ) %> </h2>
+            <% end %>
+            <br /> <br />
           <% end %>
-          <br/> <br />
         <% end %>
-      <% end %>
-      <%= yield %>
+        <%= yield %>
+      </div>
+
+      <%= render 'footer' %>
     </div>
-    
-    <%= render 'footer' %>
   </body>
 </html>

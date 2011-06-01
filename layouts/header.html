@@ -10,9 +10,9 @@
                 <u><%= link_to(  b[:title] , b.reps[0].path ) if b %></u>
               </span>
 	            <%= b != @item ? '/' : '' %>
-   	        <% else %>
-   	          <%= link_to(  b[:title] , b.reps[0].path ) if b %> 
-	            <%= b != @item ? '/' : '' %> 
+	          <% else %>
+	            <%= link_to(  b[:title] , b.reps[0].path ) if b %>
+	            <%= b != @item ? '/' : '' %>
 	          <% end %>
 	        <%end%>
         </span>

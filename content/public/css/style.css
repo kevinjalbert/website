@@ -1,6 +1,6 @@
-/* Primary Colour: #cc6622 
+/* Primary Colour: #cc6622
    Secondary Colour: #fff4bc
-   Background Colour: #2e2e33 
+   Background Colour: #2e2e33
    Accent Colour: #e5c994 */
 
 /* GENERAL */
@@ -16,6 +16,10 @@ html {
 
 body {
   background-color: #2e2e33;
+
+}
+
+#shifter {
   position: relative;
   left: -10%;
 }

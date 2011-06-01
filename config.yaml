@@ -44,6 +44,6 @@ data_sources:
 deploy:
   default:
     dst: "root@alpha:/srv/http/nginx/kevinjalbert"
-    
+
 # The base URL for this site. This is required for XML sitemap generation
 base_url: http://www.kevinjalbert.com

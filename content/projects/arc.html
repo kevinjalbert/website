@@ -1,7 +1,7 @@
---- 
+---
 title: ARC
 members: Kevin Jalbert, Jeremy S. Bradbury
-links: http://kevin.jalbert.com, http://faculty.uoit.ca/bradbury/
+links: http://kevinjalbert.com, http://faculty.uoit.ca/bradbury
 url: http://faculty.uoit.ca/bradbury/sqrg/projects/directed_search.html
 description: This research project focuses on the development of a new approach that automatically repairs concurrency bugs using genetic algorithms.
 ---
@@ -25,8 +25,8 @@ description: This research project focuses on the development of a new approach 
   A genetic algorithm is used to progressively mutate the buggy program's source code to a state where it executes in a timely fashion without errors. The mutations used are all related to adding and removing synchronization to the source code. The mutations used can only effect the thread schedules, and as a side-effect the performance overhead/reduction of added/removed synchronization. Two main criteria used in determining the fitness of a mutant are the:
 </p>
 <ul>
-  <li>Correctness of the code -> No concurrency bugs</li>
-  <li>Performance of the code -> Executes as quick as possible</li>
+  <li>Correctness of the code &rarr; No concurrency bugs</li>
+  <li>Performance of the code &rarr; Executes as quick as possible</li>
 </ul>
 <p>
   Essentially the end purpose is to automatically repair concurrency by minimizing the bugs and maximizing the performance.
