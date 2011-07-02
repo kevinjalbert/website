@@ -10,8 +10,8 @@
         <%= yield %>
         <br />
         <% if @item.parent[:title] == 'Home' %>
-          <h1>Publications</h1>
-          <%= create_sorted_publications(@item, 'paper') %>
+          <h1>Posters</h1>
+          <%= create_sorted_publications(@item, 'poster') %>
         <% end %>
       </div>
 
