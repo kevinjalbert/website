@@ -1,3 +1,11 @@
+#Information
+
+*Author*:    Kevin Jalbert  (kevin.j.jalbert@gmail.com)
+
+*Copyright*: Copyright (c) 2011 Kevin Jalbert
+
+*License*:   MIT License
+
 # Personal Website for Kevin Jalbert
 This repository is the source files for [kevinjalbert.com] [1]. The site is compiled into the actual _html_ output for the website using [nanoc] [2]. The site is geared towards showcasing projects and publications, as well as presenting social networks.
 
