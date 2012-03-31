@@ -42,7 +42,8 @@ data_sources:
 
 # The required syntax for rsync deployment
 deploy:
-  default:
+  public:
+    kind: rsync
     dst: "root@alpha:/srv/http/nginx/kevinjalbert"
 
 # The base URL for this site. This is required for XML sitemap generation
