@@ -1,0 +1,36 @@
+---
+title: CSER - Fall
+type: poster
+longtitle: "Eclipticon: Eclipse Plugin for Concurrency Testing"
+authors: Kevin Jalbert, Cody-James LeBlanc, Chris Forbes, Jeremy S. Bradbury
+links: http://kevinjalbert.com, http://codyleblanc.com, http://chrisjf.blogspot.com, http://faculty.uoit.ca/bradbury
+year: 2011
+month: Nov.
+booktitle: In 2011 Fall Meeting of the Consortium for Software Engineering Research (CSER)
+location: Markham, Ontario, Canada
+status: Best poster award
+---
+
+<h1>Eclipticon: Eclipse Plugin for Concurrency Testing</h1>
+<h4>Best Poster Award</h4>
+
+<br />
+
+<h2>Contact Information</h2>
+<h4>Authors: <%= combine_name_link(item[:authors], item[:links]) %></h4>
+
+<br />
+
+<h2>Related Projects</h2>
+<h4><%= link_to("Eclipticon", "/projects/eclipticon/") %></h4>
+
+<h3>Abstract</h3>
+<p>
+	Testing concurrent software is a challenging endeavor due to the non-deterministic nature of threaded software. There are two main techniques for properly testing concurrent software. Model checking is sometimes impractical due to resource constraints. The alternative technique is to perform thread exploration by inserting random thread delays and yields into the software. The delays make it possible to explore more of the thread interleaving space through repeated execution of a testsuite.
+	Eclipticon is a plugin built for the Eclipse IDE. The plugin gives uses two levels of control over the placement of thread delays and yields. Coarse control level allows for files to be targeted with a percentage of the applicable locations to be randomly instrumented. Fine control level allows specific areas within files to be targeted. The two levels of control, when combined with a testing approach, allow users to perform targeted testing for concurrency bugs on problematic areas.
+</p>
+
+<h3>Download</h3>
+<ul>
+  <li><a href="/public/files/posters/CSER11-fall-eclipticon-poster.pdf" onClick="javascript: _gaq.push(['_trackPageview', '/files/posters/CSER11-fall-eclipticon-poster/']);">Poster [PDF]</a></li>
+</ul>

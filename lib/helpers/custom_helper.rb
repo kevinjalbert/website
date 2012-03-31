@@ -53,7 +53,13 @@ module CustomHelper
             output += "#{child[:pages]}, "
           end
 
-          output += "#{child[:location]}, #{child[:month]} #{child[:year]}.</li>"
+          output += "#{child[:location]}, #{child[:month]} #{child[:year]}."
+
+          if child[:status] != nil
+            output += " <b>#{child[:status]}</b>."
+          end
+
+          output += "</li>"
         end
       end
 
