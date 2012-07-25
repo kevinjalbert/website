@@ -91,6 +91,8 @@ module CustomHelper
     for i in 0..allNames.length-1 do
       if (allLinks[i].index('@') != nil)
         output += "<a href=\"mailto:" + allLinks[i] + "\">" + allNames[i] + "</a>, "
+      elsif allLinks[i] == "nil"
+        output += allNames[i] + ", "
       else
         output += "<a href=\"" + allLinks[i] + "\">" + allNames[i] + "</a>, "
       end
