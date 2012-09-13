@@ -8,9 +8,14 @@
 
       <div id="project_publication_content">
         <%= yield %>
-        <br />
         <% if @item.parent[:title] == 'Home' %>
-          <%= create_sorted_publications(@item, 'paper') %>
+          <% @item.children.each do | child | %>
+            <% if child[:title] != 'Home' %>
+              <h1><%= link_to(child[:title], child.reps[0].path) %></h1>
+              <h2><%= child[:description] %> </h2>
+            <% end %>
+            <br /> <br />
+          <% end %>
         <% end %>
       </div>
 

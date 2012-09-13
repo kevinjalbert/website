@@ -7,16 +7,16 @@
       <%= render 'sidebar' %>
 
       <div id="project_publication_content">
+        <%= yield %>
         <% if @item.parent[:title] == 'Home' %>
           <% @item.children.each do | child | %>
             <% if child[:title] != 'Home' %>
-              <h1><%= child[:title] %></h1>
-              <h2><%= child[:description] %> <br /> <%= link_to(  "Details...", child.reps[0].path ) %> </h2>
+            <h1><%= link_to(child[:title], child[:url]) %></h1> <h4><%= if child[:owner] then 'Owner' else 'Contributer' end %></h4>
+              <h2><%= child[:description] %> </h2>
             <% end %>
             <br /> <br />
           <% end %>
         <% end %>
-        <%= yield %>
       </div>
 
       <%= render 'footer' %>

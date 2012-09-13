@@ -146,6 +146,7 @@ li {
 
 #project_publication_content h2 {
   font-size: 15px;
+  font-weight: normal;
   padding-left: 5px;
   padding-bottom: 10px;
   border-bottom: 2px solid #2e2e33;
@@ -161,7 +162,7 @@ li {
 }
 
 #project_publication_content h4 {
-  font-size: 12px;
+  font-size: 15px;
   padding-left: 5px;
   padding-top: 5px;
   border-left: 5px solid #2e2e33;

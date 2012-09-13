@@ -27,10 +27,16 @@ route '/public/files/*' do
   item.identifier.chop + "." + item[:extension]
 end
 
-# Compile the project pages
-compile '/projects/*' do
+# Compile the research project pages
+compile '/research/*' do
   filter :erb
-  layout 'projects'
+  layout 'research'
+end
+
+# Compile the open source project pages
+compile '/open-source/*' do
+  filter :erb
+  layout 'open-source'
 end
 
 # Compile the publication pages
