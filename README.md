@@ -11,3 +11,7 @@ This repository is the source files for [kevinjalbert.com] [1]. The site is prim
 
   [1]: http://kevinjalbert.com
   [2]: http://nanoc.stoneship.org
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/kevinjalbert/website/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
