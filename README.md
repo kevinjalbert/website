@@ -1,3 +1,7 @@
+Website
+=====
+[![Gitter Chat](http://img.shields.io/chat/gitter.png?color=brightgreen)](https://gitter.im/kevinjalbert/website)
+
 #Information
 
 *Author*:    Kevin Jalbert  (kevin.j.jalbert@gmail.com)
@@ -11,7 +15,3 @@ This repository is the source files for [kevinjalbert.com] [1]. The site is prim
 
   [1]: http://kevinjalbert.com
   [2]: http://nanoc.stoneship.org
-
-
-[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/kevinjalbert/website/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
-
